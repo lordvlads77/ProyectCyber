@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Movement2 : MonoBehaviour
@@ -23,6 +21,8 @@ public class Movement2 : MonoBehaviour
     public float staminaRegenRate = 10.0f; // Tasa de regeneración de stamina por segundo
     private float currentStamina; // Stamina actual
 
+    private bool isJumping = false; // Estado de salto
+
     private void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -41,6 +41,7 @@ public class Movement2 : MonoBehaviour
         if (isGrounded && velocity.y < 0)
         {
             velocity.y = -2.0f;
+            isJumping = false; // El personaje está nuevamente en el suelo
         }
 
         float horizontalInput = Input.GetAxis("Horizontal");
@@ -70,10 +71,11 @@ public class Movement2 : MonoBehaviour
 
         controller.Move(move * currentMoveSpeed * Time.deltaTime);
 
-        // Saltar
-        if (isGrounded && Input.GetButtonDown("Jump"))
+        // Salto al presionar la barra espaciadora y estando en el suelo
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded && !isJumping)
         {
             velocity.y = Mathf.Sqrt(jumpForce * -2.0f * gravity);
+            isJumping = true; // El personaje está en estado de salto
         }
 
         // Aplicar gravedad
