@@ -4,34 +4,45 @@ using UnityEngine;
 
 public class ThirdPersonCamera : MonoBehaviour
 {
-    public Transform target; // El transform del jugador a seguir
+    public Transform target;
+    public Transform character;
     public float rotationSpeed = 2.0f;
-    public float distance = 5.0f; // Distancia entre la cámara y el jugador
+    public float distance = 5.0f;
+    public float minDistance = 2.0f;
+    public float collisionOffset = 0.2f;
 
     private float mouseX, mouseY;
+    private float currentDistance;
 
     private void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked; // Bloquea el cursor en el centro de la pantalla
+        Cursor.lockState = CursorLockMode.Locked;
+        currentDistance = distance;
     }
 
     private void Update()
     {
-        // Captura la entrada del mouse para girar la cámara
         mouseX += Input.GetAxis("Mouse X") * rotationSpeed;
         mouseY -= Input.GetAxis("Mouse Y") * rotationSpeed;
-        mouseY = Mathf.Clamp(mouseY, -35f, 60f); // Limita el ángulo de la cámara en vertical
-
-        // Calcula la posición de la cámara en función de la rotación y la distancia
+        mouseY = Mathf.Clamp(mouseY, -35f, 60f);
         Quaternion rotation = Quaternion.Euler(mouseY, mouseX, 0);
-        Vector3 negDistance = new Vector3(0.0f, 0.0f, -distance);
+        Vector3 negDistance = new Vector3(0.0f, 0.0f, -currentDistance);
         Vector3 desiredPosition = target.position + (rotation * negDistance);
+        Ray ray = new Ray(target.position, desiredPosition - target.position);
+        RaycastHit hit;
 
-        // Actualiza la posición y mira hacia el jugador
-        transform.rotation = rotation;
-        transform.position = desiredPosition;
+        if (Physics.Raycast(ray, out hit, currentDistance))
+        {
+            currentDistance = Mathf.Lerp(currentDistance, Mathf.Clamp(hit.distance - collisionOffset, minDistance, distance), Time.deltaTime * 10.0f);
+        }
+        else
+        {
+            currentDistance = distance;
+        }
+        transform.position = target.position + (rotation * new Vector3(0.0f, 0.0f, -currentDistance));
 
-        // Hace que la cámara mire al jugador
         transform.LookAt(target);
+
+        character.LookAt(transform.position);
     }
 }
