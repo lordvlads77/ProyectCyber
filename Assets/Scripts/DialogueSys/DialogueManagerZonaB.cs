@@ -33,6 +33,8 @@ public class DialogueManagerZonaB : MonoBehaviour
             _sentences.Enqueue(sentence);
         }
         showNextSentence();
+        _thirdPersonCamera.rotationSpeed = 0;
+        Cursor.lockState = CursorLockMode.None;
     }
 
     public void showNextSentence()

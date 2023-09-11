@@ -20,6 +20,12 @@ public class Pickup : MonoBehaviour
 
     [SerializeField] private bool _isHolding = default;
     [SerializeField] private bool _slotFull = default;
+
+    [Header("CameraRef")] 
+    [SerializeField] private ThirdPersonCamera _thirdPersonCamera = default;
+
+    [Header("DialogueTriggerRef")] 
+    public DialogueTriggerZonaB _dialogueTriggerZona;
     
     
     // Start is called before the first frame update
@@ -38,12 +44,7 @@ public class Pickup : MonoBehaviour
             _slotFull = true;
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-            
-    }
+    
 
     private void LateUpdate()
     {
@@ -53,6 +54,8 @@ public class Pickup : MonoBehaviour
             if (!_isHolding && distanceToPlayer.magnitude <= _pickupRange && !_slotFull)
             {
                 pickup();
+                _thirdPersonCamera._dialogCanvass.enabled = true;
+                _dialogueTriggerZona.JumpStartDialogue();
             }
         }
     }
