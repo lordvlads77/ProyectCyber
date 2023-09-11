@@ -14,11 +14,10 @@ public class TorchLightControl : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log("Es de noche: " + DayNightCycle.esDeNoche);
-
         if (DayNightCycle.esDeNoche)
         {
             torchLight.enabled = true;
+            //Debug.Log("Es de noche: " + DayNightCycle.esDeNoche);
         }
         else
         {
