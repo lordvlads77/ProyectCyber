@@ -20,11 +20,8 @@ public class ThirdPersonCamera : MonoBehaviour
 
     private void Start()
     {
-        if (_dialogCanvass == enabled)
-        {
-            Cursor.lockState = CursorLockMode.None; // Muestra el mouse
-            rotationSpeed = 0;
-        }
+        Cursor.lockState = CursorLockMode.Locked;
+        rotationSpeed = 1;
         currentDistance = distance;
     }
 
