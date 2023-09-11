@@ -5,7 +5,6 @@ using UnityEngine;
 public class TorchLightControl : MonoBehaviour
 {
     private Light torchLight;
-    private bool prevIsNight = false;
 
     private void Start()
     {
@@ -15,16 +14,12 @@ public class TorchLightControl : MonoBehaviour
 
     private void Update()
     {
-        if (prevIsNight != DayNightCycle.esDeNoche)
+        if (DayNightCycle.esDeNoche)
         {
-            prevIsNight = DayNightCycle.esDeNoche;
-
-            if (DayNightCycle.esDeNoche)
-            {
-                torchLight.enabled = true;
-            }
+            torchLight.enabled = true;
+            //Debug.Log("Es de noche: " + DayNightCycle.esDeNoche);
         }
-        else if (!DayNightCycle.esDeNoche && torchLight.enabled)
+        else
         {
             torchLight.enabled = false;
         }
