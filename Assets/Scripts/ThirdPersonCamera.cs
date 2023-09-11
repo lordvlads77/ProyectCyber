@@ -11,12 +11,20 @@ public class ThirdPersonCamera : MonoBehaviour
     public float minDistance = 2.0f;
     public float collisionOffset = 0.2f;
 
+    [Header("Canvas Ref")]
+    [SerializeField]
+    public Canvas _dialogCanvass = default;
+
     private float mouseX, mouseY;
     private float currentDistance;
 
     private void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+        if (_dialogCanvass == enabled)
+        {
+            Cursor.lockState = CursorLockMode.None; // Muestra el mouse
+            rotationSpeed = 0;
+        }
         currentDistance = distance;
     }
 

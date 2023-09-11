@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,7 +10,7 @@ public class CamaraControl : MonoBehaviour
     public float mouseSensibilidadX;
     public float mouseSensibilidadY;
     private float rotationX = default;
-    [SerializeField] private Canvas _dialogCanvas = default;
+    [SerializeField] public Canvas _dialogCanvas = default;
 
     [Header("Referencia")] 
     public Transform cuerpoTransform;
@@ -21,14 +22,6 @@ public class CamaraControl : MonoBehaviour
             mouseSensibilidadX = 0;
             mouseSensibilidadY = 0;
         }
-        else if (_dialogCanvas == enabled==false)
-        {
-            // En el editor, si presionas ESC, vuelve a aparecer el mouse.
-            Cursor.lockState = CursorLockMode.Locked; // Oculta el mouse y lo mantiene dentro del juego
-            mouseSensibilidadX = 200;
-            mouseSensibilidadY = 270;
-        }
-        
     }
     
     void Update()

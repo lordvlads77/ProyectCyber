@@ -5,12 +5,11 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-public class DialogMananger : MonoBehaviour
+public class DialogueManagerZonaB : MonoBehaviour
 {
-    
     [Header("Camara Script Reference")]
-    [FormerlySerializedAs("camaraControl")][SerializeField] private CamaraControl _camaraControl;
-    
+    [SerializeField] private ThirdPersonCamera _thirdPersonCamera;
+
     [SerializeField] private TextMeshProUGUI _speakerNameText = default;
     [SerializeField] private TextMeshProUGUI _dialogueTxt = default;
     
@@ -65,11 +64,10 @@ public class DialogMananger : MonoBehaviour
     {
         _anim.SetBool(_isOpen, false);
         Debug.Log("Se acabo el Cotorreo");
-        _camaraControl._dialogCanvas.enabled = false;
         // En el editor, si presionas ESC, vuelve a aparecer el mouse.
         Cursor.lockState = CursorLockMode.Locked; // Oculta el mouse y lo mantiene dentro del juego
-        _camaraControl.mouseSensibilidadX = 200;
-        _camaraControl.mouseSensibilidadY = 270;
+        _thirdPersonCamera._dialogCanvass.enabled = false;
+        _thirdPersonCamera.rotationSpeed = 1;
 
     }
 }
