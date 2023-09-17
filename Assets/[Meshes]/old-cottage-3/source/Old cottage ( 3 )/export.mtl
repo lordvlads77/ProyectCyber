@@ -1,0 +1,730 @@
+
+newmtl buis_en_pot___buisson_pot_feuille
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_d feuilles_chevrefeuille2.png
+map_Kd feuilles_chevrefeuille2.png
+
+newmtl buisson___buisson_branche_texture
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_d feuilles_chevrefeuille.png
+map_Kd feuilles_chevrefeuille.png
+
+newmtl plante_vase_off_001___phong37
+Kd 0.800000011920929 0.800000011920929 0.800000011920929
+Ks 0 0 0
+d 1
+Ns 18
+illum 2
+map_d feuilles_tex_002.png
+map_Kd feuilles_tex_002.png
+
+newmtl texture_eau_piscine
+Kd 1 1 1
+Ks 0 0 0
+d 1
+Ns 0.2000000029802322
+illum 2
+map_d texture_eau_piscine.png
+map_Kd texture_eau_piscine.png
+
+newmtl plante_vase_off_002___phong38
+Kd 0.800000011920929 0.800000011920929 0.800000011920929
+Ks 0 0 0
+d 1
+Ns 18
+illum 2
+map_d feuilles_tex_003.png
+map_Kd feuilles_tex_003.png
+
+newmtl plante_interieur_off___phong80
+Kd 0.800000011920929 0.800000011920929 0.800000011920929
+Ks 0 0 0
+d 1
+illum 1
+map_d palmier_tex_001.png
+map_Kd palmier_tex_001.png
+
+newmtl daisies___daisies:daisies_fleur
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_d fleur_marguerite.png
+map_Kd fleur_marguerite.png
+
+newmtl daisies___daisies:material__554
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_d bouton_marguerite.png
+map_Kd bouton_marguerite.png
+
+newmtl bleuets___petales
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_d petales_bleuet.png
+map_Kd petales_bleuet.png
+
+newmtl foyer_exterieur_rond___foyer_exterieur_rond_foyer_exterieur_rond_grille
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_d grille_03.png
+map_Kd grille_03.png
+
+newmtl foyer_exterieur_rond___phong1sg
+Kd 1 1 1
+Ks 0.5 0.5 0.5
+d 1
+illum 1
+map_d fire.png
+map_Kd fire.png
+
+newmtl frene____frenefeuilles1
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_d feuilles_frene.png
+map_Kd feuilles_frene.png
+
+newmtl oak_tree___oak_banche
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_d branche_oak.png
+map_Kd branche_oak.png
+
+newmtl cerisier_002____cerisier_002cerisier_cerisier_feuilles
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_d feuilles_cerisier_japon.png
+map_Kd feuilles_cerisier_japon.png
+
+newmtl citrus_tree___citrus_tree:citrus_feuilles
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_d feuilles_citrus.png
+map_Kd feuilles_citrus.png
+
+newmtl magnolia___magnolia_magnolia_fleur
+Kd 1 1 1
+Ks 0.5 0.5 0.5
+d 1
+illum 1
+map_d feuilles_magnolia.png
+map_Kd feuilles_magnolia.png
+
+newmtl gris_002_Wall_Entity_Material
+Kd 0.4235294163227081 0.4235294163227081 0.4235294163227081
+Ks 0 0 0
+d 1
+Ns 0.2000000029802322
+illum 2
+
+newmtl blanc_001_Wall_Entity_Material
+Kd 1 1 1
+Ks 0 0 0
+d 1
+Ns 0.2000000029802322
+illum 2
+
+newmtl enduit_004_Wall_Entity_Material
+Kd 1 1 1
+Ks 0 0 0
+d 1
+Ns 0.2000000029802322
+illum 2
+map_Kd enduit_004.jpg
+
+newmtl 20200522-13451-cest_Wall_Entity_Material
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_Kd 20200522-13451-cest.jpg
+
+newmtl 20200522-13451-cest_ovcole6e6e6colpic12contpic04_Wall_Entity_Material
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_Kd 20200522-13451-cest.jpg
+
+newmtl brique_002_Wall_Entity_Material
+Kd 1 1 1
+Ks 0 0 0
+d 1
+Ns 0.2000000029802322
+illum 2
+map_Kd brique_002.jpg
+
+newmtl beige_006_Wall_Entity_Material
+Kd 0.9098039269447327 0.9098039269447327 0.8784313797950745
+Ks 0 0 0
+d 1
+Ns 0.2000000029802322
+illum 2
+
+newmtl 20200530-92821-west_Wall_Entity_Material
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_Kd 20200530-92821-west.jpg
+
+newmtl gris_006_Wall_Entity_Material
+Kd 0.1333333402872086 0.1372549086809158 0.1568627506494522
+Ks 0 0 0
+d 1
+Ns 0.2000000029802322
+illum 2
+
+newmtl brique_014_ovcol161d22colpic11contpic07_Wall_Entity_Material
+Kd 1 1 1
+Ks 0 0 0
+d 1
+Ns 0.2000000029802322
+illum 2
+map_Kd brique_014.jpg
+
+newmtl brique_014_ovcol171d22colpic11contpic07_Wall_Entity_Material
+Kd 1 1 1
+Ks 0 0 0
+d 1
+Ns 0.2000000029802322
+illum 2
+map_Kd brique_014.jpg
+
+newmtl e711a8002487ad8ab6fddf6cbe73f6c3 (2)_Wall_Entity_Material
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_Kd e711a8002487ad8ab6fddf6cbe73f6c3 (2).jpg
+
+newmtl enduit_004_Room_Entity_Material
+Kd 1 1 1
+Ks 0 0 0
+d 1
+Ns 0.2000000029802322
+illum 2
+map_Kd enduit_004.jpg
+
+newmtl blanc_001_Room_Entity_Material
+Kd 1 1 1
+Ks 0 0 0
+d 1
+Ns 0.2000000029802322
+illum 2
+
+newmtl 20180422-195127-edt_Room_Entity_Material
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_Kd 20180422-195127-edt.jpg
+
+newmtl 20200530-92821-west_Room_Entity_Material
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_Kd 20200530-92821-west.jpg
+
+newmtl parquet_022_Room_Entity_Material
+Kd 1 1 1
+Ks 0 0 0
+d 1
+Ns 0.2000000029802322
+illum 2
+map_Kd parquet_022.jpg
+
+newmtl bitume_001_ovcol4c4c4ccolpic12contpic09_Room_Entity_Material
+Kd 1 1 1
+Ks 0 0 0
+d 1
+Ns 0.2000000029802322
+illum 2
+map_Kd bitume_001.jpg
+
+newmtl 20200522-13451-cest_Room_Entity_Material
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_Kd 20200522-13451-cest.jpg
+
+newmtl 20180503-11513-mdt_Room_Entity_Material
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_Kd 20180503-11513-mdt.jpg
+
+newmtl brique_002
+Kd 1 1 1
+Ks 0 0 0
+d 1
+Ns 0.2000000029802322
+illum 2
+map_Kd brique_002.jpg
+
+newmtl 1555650204616
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_d 1555650204616.png
+map_Kd 1555650204616.png
+
+newmtl buis_en_pot___buisson_pot_base_feuillage
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_Kd buisson.jpg
+
+newmtl tex_roof_002_ovcol737373colpic12contpic11
+Kd 1 1 1
+Ks 0.2000000029802322 0.2000000029802322 0.2000000029802322
+d 1
+Ns 1
+illum 2
+map_Kd tex_roof_002.jpg
+
+newmtl 20180503-11513-mdt
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_Kd 20180503-11513-mdt.jpg
+
+newmtl kitchen_vintage_style_base_corner_000___m_poignet
+Kd 1 1 1
+Ks 0.5607839822769165 0.5607839822769165 0.5607839822769165
+d 1
+Ns 10
+illum 2
+map_Kd tex_gene_metal_004.jpg
+
+newmtl 20200530-92821-west
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_Kd 20200530-92821-west.jpg
+
+newmtl kitchen_vintage_style_tall_cabinet_oven_005___m_four
+Kd 0.800000011920929 0.800000011920929 0.800000011920929
+Ks 0.07999999821186066 0.07999999821186066 0.07999999821186066
+d 1
+Ns 1
+illum 2
+map_Kd stainless__brushed_001.jpg
+
+newmtl kitchen_vintage_style_tall_cabinet_oven_005___m_panneau_elec
+Kd 0.800000011920929 0.800000011920929 0.800000011920929
+Ks 0 0 0
+d 1
+illum 1
+map_Kd display_000.jpg
+
+newmtl kitchen_vintage_style_base_cabinet_oven_002___m_plaque
+Kd 0.800000011920929 0.800000011920929 0.800000011920929
+Ks 0 0 0
+d 1
+illum 1
+map_Kd oven_007.jpg
+
+newmtl indu_objet_004_metal001___metal0027
+Kd 1 1 1
+Ks 0.09999240189790726 0.09999240189790726 0.09999240189790726
+d 1
+Ns 1
+illum 2
+map_Kd tex_gene_metal_001.jpg
+
+newmtl indu_objet_005_metal001___metal0028
+Kd 1 1 1
+Ks 0.4000000059604645 0.4000000059604645 0.4000000059604645
+d 1
+Ns 1
+illum 2
+map_Kd metal_006.jpg
+
+newmtl 48b058e99e24f1df3e8b2e5c47216a8f
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_Kd 48b058e99e24f1df3e8b2e5c47216a8f.jpg
+
+newmtl 20210419-122424-edt
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_Kd 20210419-122424-edt.jpg
+
+newmtl 20210520-151254-cdt
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_d 20210520-151254-cdt.png
+map_Kd 20210520-151254-cdt.png
+
+newmtl moquette_tex_003
+Kd 1 1 1
+Ks 0 0 0
+d 1
+Ns 0.2000000029802322
+illum 2
+map_Kd moquette_tex_003.jpg
+
+newmtl table_basse_010____table_basse_010table_basse_metal
+Kd 1 1 1
+Ks 0 0 0
+d 1
+Ns 0.8999999761581421
+illum 2
+map_Kd metal_014.jpg
+
+newmtl 20210524-93935-cdt
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_Kd 20210524-93935-cdt.jpg
+
+newmtl bibliotheque_002___bibliotheque_002:paper_livre1
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_Kd tex_livre1.jpg
+
+newmtl bibliotheque_002___bibliotheque_002:paper_livre3
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_Kd tex_livre3.jpg
+
+newmtl bibliotheque_002___bibliotheque_002:paper_livre4
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_Kd tex_livre4.jpg
+
+newmtl bibliotheque_002___bibliotheque_002:paper_livre7
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_Kd tex_livre2.jpg
+
+newmtl tissus_057
+Kd 1 1 1
+Ks 0 0 0
+d 1
+Ns 0.2000000029802322
+illum 2
+map_Kd tissus_057.jpg
+
+newmtl 20190530-185730-edt
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_Kd 20190530-185730-edt.jpg
+
+newmtl 20181008_133558
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_Kd 20181008_133558.jpg
+
+newmtl scene_table_basse_off___phong40
+Kd 1 1 1
+Ks 0.02097902074456215 0.02097902074456215 0.02097902074456215
+d 1
+illum 1
+map_Kd Magazine_off_001_tex.jpg
+
+newmtl scene_table_basse_off___phong84
+Kd 0.800000011920929 0.800000011920929 0.800000011920929
+Ks 0 0 0
+d 1
+illum 1
+map_Kd magazine_off_tex_002.jpg
+
+newmtl miroir_001___miroir_001_phong3sg
+Kd 1 1 1
+Ks 1 1 1
+d 1
+illum 1
+map_Kd tex_miroir.jpg
+
+newmtl tapis_012___tapis_012:_tapis_012_tapis_012tapis
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_Kd tissus_044.jpg
+
+newmtl luminaire_off_004___phong48
+Kd 1 1 1
+Ks 0.1000000014901161 0.1000000014901161 0.1000000014901161
+d 1
+Ns 1
+illum 2
+map_Kd bois_070.jpg
+
+newmtl pack_005_salle_a_manger_armoire___nopaint_bouteilles
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_Kd text_bouteille.jpg
+
+newmtl 20200929-161213-aest
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_Kd 20200929-161213-aest.jpg
+
+newmtl 20171029_191052
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_d 20171029_191052.png
+map_Kd 20171029_191052.png
+
+newmtl 20190412_192310_ovcol4c4c4ccolpic12contpic09
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_d 20190412_192310.png
+map_Kd 20190412_192310.png
+
+newmtl 20210521-8478-cdt
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_d 20210521-8478-cdt.png
+map_Kd 20210521-8478-cdt.png
+
+newmtl 20191222-04456-cst
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_Kd 20191222-04456-cst.jpg
+
+newmtl kitchen_vintage_style_base_cabinet_016___m_black_wood
+Kd 1 1 1
+Ks 0.05098040029406548 0.05098040029406548 0.05098040029406548
+d 1
+Ns 1
+illum 2
+map_Kd tex_bois_scan_black_001.jpg
+
+newmtl 20200522-13451-cest
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_Kd 20200522-13451-cest.jpg
+
+newmtl kitchen_vintage_style_base_cabinet_009___m_wood_surface
+Kd 1 1 1
+Ks 0.05594410002231598 0.05594410002231598 0.05594410002231598
+d 1
+Ns 5.48252010345459
+illum 2
+map_Kd tex_bois_scan_blanc_002.jpg
+
+newmtl cuisine_ext_barbecue_001___cuisine_ext_barbecue_001:cuisine_exterieur_barbecu_001_phong1sg
+Kd 1 1 1
+Ks 0.300000011920929 0.300000011920929 0.300000011920929
+d 1
+illum 1
+map_Kd roche_001.jpg
+
+newmtl cuisine_ext_barbecue_001___cuisine_ext_barbecue_001:cuisine_exterieur_barbecu_001_phong2sg
+Kd 1 1 1
+Ks 0.2000000029802322 0.2000000029802322 0.2000000029802322
+d 1
+illum 1
+map_Kd peinture_au_sable_004.jpg
+
+newmtl cuisine_ext_barbecue_001___cuisine_ext_barbecue_001:cuisine_exterieur_rangement_001_phong4sg
+Kd 1 1 1
+Ks 0.5 0.5 0.5
+d 1
+Ns 0.699999988079071
+illum 2
+map_Kd metal_013.jpg
+
+newmtl metal_016_ovcol565656colpic12contpic10
+Kd 1 1 1
+Ks 0 0 0
+d 1
+Ns 0.2000000029802322
+illum 2
+map_Kd metal_016.jpg
+
+newmtl metal_005
+Kd 1 1 1
+Ks 0 0 0
+d 1
+Ns 0.2000000029802322
+illum 2
+map_Kd metal_005.jpg
+
+newmtl bitume_001_ovcol4c4c4ccolpic12contpic09
+Kd 1 1 1
+Ks 0 0 0
+d 1
+Ns 0.2000000029802322
+illum 2
+map_Kd bitume_001.jpg
+
+newmtl arbuste___mat_arbuste_bois
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_Kd texture_tronc_arbuste.jpg
+
+newmtl arbuste___mat_arbuste_feuille
+Kd 1 1 1
+Ks 0 0 0
+d 1
+illum 1
+map_Kd texture_gardenia.jpg
+
+newmtl fake_mat_255_255_255_32
+Kd 1.000000 1.000000 1.000000
+Ks 0 0 0
+d 0.125490
+illum 1
+
+newmtl fake_mat_13_13_13_255
+Kd 0.050980 0.050980 0.050980
+Ks 0 0 0
+d 1.000000
+illum 1
+
+newmtl fake_mat_104_24_35_255
+Kd 0.407843 0.094118 0.137255
+Ks 0 0 0
+d 1.000000
+illum 1
+
+newmtl fake_mat_209_184_39_255
+Kd 0.819608 0.721569 0.152941
+Ks 0 0 0
+d 1.000000
+illum 1
+
+newmtl fake_mat_93_65_44_255
+Kd 0.364706 0.254902 0.172549
+Ks 0 0 0
+d 1.000000
+illum 1
+
+newmtl fake_mat_83_116_47_255
+Kd 0.325490 0.454902 0.184314
+Ks 0 0 0
+d 1.000000
+illum 1
+
+newmtl fake_mat_59_60_61_255
+Kd 0.231373 0.235294 0.239216
+Ks 0 0 0
+d 1.000000
+illum 1
+
+newmtl fake_mat_176_128_74_255
+Kd 0.690196 0.501961 0.290196
+Ks 0 0 0
+d 1.000000
+illum 1
+
+newmtl fake_mat_228_87_79_255
+Kd 0.894118 0.341176 0.309804
+Ks 0 0 0
+d 1.000000
+illum 1
+
+newmtl fake_mat_122_117_111_255
+Kd 0.478431 0.458824 0.435294
+Ks 0 0 0
+d 1.000000
+illum 1
+
+newmtl fake_mat_226_184_113_255
+Kd 0.886275 0.721569 0.443137
+Ks 0 0 0
+d 1.000000
+illum 1
+
+newmtl fake_mat_2_34_152_255
+Kd 0.007843 0.133333 0.596078
+Ks 0 0 0
+d 1.000000
+illum 1
+
+newmtl fake_mat_175_162_163_255
+Kd 0.686275 0.635294 0.639216
+Ks 0 0 0
+d 1.000000
+illum 1
+
+newmtl fake_mat_212_203_175_255
+Kd 0.831373 0.796078 0.686275
+Ks 0 0 0
+d 1.000000
+illum 1
+
+newmtl fake_mat_81_138_176_255
+Kd 0.317647 0.541176 0.690196
+Ks 0 0 0
+d 1.000000
+illum 1
+
+newmtl fake_mat_211_212_212_255
+Kd 0.827451 0.831373 0.831373
+Ks 0 0 0
+d 1.000000
+illum 1
+
+newmtl fake_mat_243_244_241_255
+Kd 0.952941 0.956863 0.945098
+Ks 0 0 0
+d 1.000000
+illum 1
