@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ZonaAlta.unity
     guid: fe5c564394730174f9fb3c64f4f397cf
+  - enabled: 1
+    path: Assets/Scenes/DistritoComercial.unity
+    guid: 9782b0896c543064cb16cd7b4af3057b
   m_configObjects: {}

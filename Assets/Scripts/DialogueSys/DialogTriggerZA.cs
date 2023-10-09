@@ -26,7 +26,6 @@ public class DialogTriggerZA : MonoBehaviour
 
     public void ExitDiag()
     {
-        Debug.Log("Tiggered");
         FindObjectOfType<DialogManagerZA>().StartCoto(dialogue);
     }
 }
