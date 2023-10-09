@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DistritoComercial.unity
     guid: 9782b0896c543064cb16cd7b4af3057b
+  - enabled: 1
+    path: Assets/Scenes/SpeedRun.unity
+    guid: 3c72961000c9080439061a199c09c593
   m_configObjects: {}
