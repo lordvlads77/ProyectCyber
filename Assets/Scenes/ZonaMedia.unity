@@ -20152,7 +20152,7 @@ MonoBehaviour:
     - estaba pasando por la zona baja de regreso de comprar el mandado
     - "changos, creo que se me ha de haber caido por ah\xED."
     - tendre que ir por ella, antes de ir a la zona comercial
-    - (busca tu cartera en la zona baja) cuando la encuentres presiona la tecla "E"
+    - (busca tu cartera en la zona baja) cuando la encuentres presiona la tecla "F"
       para recogerla.
   _startCanvas: {fileID: 821539359}
   _personajeMov: {fileID: 815738250}
