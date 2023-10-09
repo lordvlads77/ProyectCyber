@@ -6,7 +6,6 @@ using UnityEngine;
 
 public class EmotionalDamageInducer : MonoBehaviour
 {
-    // Start is called before the first frame update
     private void LateUpdate()
     {
         StartCoroutine(EmotionalDamage());
@@ -15,9 +14,13 @@ public class EmotionalDamageInducer : MonoBehaviour
     IEnumerator EmotionalDamage()
     {
         yield return new WaitForSeconds(30);
-        Debug.Log("EnterFirstClip");
         AudioController.Instance.EmotionalDMGSFX();
         yield break;
         
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        AudioController.Instance.EmotionalDmgShotSFX();
     }
 }
