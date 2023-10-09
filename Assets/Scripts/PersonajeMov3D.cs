@@ -21,6 +21,10 @@ public class PersonajeMov3D : MonoBehaviour
     public float checkGroundRatio;
     public LayerMask checkGroundMask;
     
+    [Header("Animation Stuff")]
+    [SerializeField] private Animator _animator = default;
+    private readonly int _ahSpeed = Animator.StringToHash("speed");
+
 
     private void FixedUpdate()
     {
@@ -36,14 +40,23 @@ public class PersonajeMov3D : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            _animator.SetInteger(_ahSpeed, 2);
+        }
+
+        if (Input.GetKeyUp(KeyCode.W))
+        {
+            _animator.SetInteger(_ahSpeed, 0);
+        }
         if (Input.GetKey(KeyCode.Q))
         {
-            transform.Rotate(Vector3.up * -velocidadRotacion * Time.deltaTime);
+            transform.Rotate(Vector3.up * (-velocidadRotacion * Time.deltaTime));
         }
 
         if (Input.GetKey(KeyCode.E))
         {
-            transform.Rotate(Vector3.up * velocidadRotacion * Time.deltaTime);
+            transform.Rotate(Vector3.up * (velocidadRotacion * Time.deltaTime));
         }
         if (Input.GetKey(KeyCode.Space) && isGround) // KeyDown y KeyUp no funcionan correctamente en el FixedUpdate
         {
