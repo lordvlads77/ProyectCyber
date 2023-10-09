@@ -6,6 +6,8 @@ TagManager:
   tags:
   - PlayerHealthBar
   - ExitDiag
+  - ReSpawner
+  - LevelChanger
   layers:
   - Default
   - TransparentFX
