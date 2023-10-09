@@ -9,17 +9,17 @@ public class CamaraControl : MonoBehaviour
 
     public float mouseSensibilidadY;
     private float rotationX = default;
-    //[SerializeField] public Canvas _dialogCanvas = default;
+    [SerializeField] public Canvas _dialogCanvas = default;
 
     [Header("Referencia")] 
     public Transform cuerpoTransform;
     void Start()
     {
-        /*if (_dialogCanvas == enabled)
+        if (_dialogCanvas == enabled)
         {
             Cursor.lockState = CursorLockMode.None; // Muestra el mouse
             mouseSensibilidadY = 0;
-        }*/
+        }
     }
     
     void Update()

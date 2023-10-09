@@ -25,6 +25,10 @@ public class PersonajeMov3D : MonoBehaviour
     [SerializeField] private Animator _animator = default;
     private readonly int _ahSpeed = Animator.StringToHash("speed");
 
+    private void Awake()
+    {
+        
+    }
 
     private void FixedUpdate()
     {
@@ -43,6 +47,7 @@ public class PersonajeMov3D : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W))
         {
             _animator.SetInteger(_ahSpeed, 2);
+            
         }
 
         if (Input.GetKeyUp(KeyCode.W))

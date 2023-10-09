@@ -1,21 +1,19 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
-using UnityEngine.Serialization;
+using TMPro;
+using System;
 
-public class DialogMananger : MonoBehaviour
+public class DialogManagerZA : MonoBehaviour
 {
-    
     [Header("Camara Script Reference")]
-    [FormerlySerializedAs("camaraControl")][SerializeField] private CamaraControl _camaraControl;
+    [SerializeField] private CamaraControl _camaraControl;
     
     [SerializeField] private TextMeshProUGUI _speakerNameText = default;
     [SerializeField] private TextMeshProUGUI _dialogueTxt = default;
     
     [Header("Animation")]
-    [FormerlySerializedAs("anim")] public Animator _anim;
+    public Animator _anim;
     private readonly int _isOpen = Animator.StringToHash("isOpen");
     
     private Queue<string> _sentences;
@@ -44,9 +42,9 @@ public class DialogMananger : MonoBehaviour
             return;
         }
         string sentence = _sentences.Dequeue();
-        StopCoroutine(writeSentences(sentence));
-        //_dialogueTxt.text = sentence; This call the complete sentence
-        StartCoroutine(writeSentences(sentence));
+        //StopCoroutine(writeSentences(sentence));
+        _dialogueTxt.text = sentence; //This call the complete sentence
+        //StartCoroutine(writeSentences(sentence));
     }
 
     IEnumerator writeSentences(string sentence)
@@ -55,7 +53,6 @@ public class DialogMananger : MonoBehaviour
         foreach (char letter in sentence.ToCharArray())
         {
             _dialogueTxt.text += letter;
-            new WaitForSeconds(2);
             yield return null;
         }
         

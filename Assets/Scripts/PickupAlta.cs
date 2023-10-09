@@ -23,12 +23,9 @@ public class PickupAlta : MonoBehaviour
     
     [Header("Camera Ref")]
     [FormerlySerializedAs("_cameraControl")] [SerializeField] private CamaraControl _camaraControl = default;
+    
+    public DialogTriggerZA _dialogTriggerZA;
 
-    //[Header("DialogueTriggerRef")] 
-    //public DialogueTriggerZonaB _dialogueTriggerZona;
-    
-    
-    // Start is called before the first frame update
     void Start()
     {
         if (!_isHolding)
@@ -54,8 +51,10 @@ public class PickupAlta : MonoBehaviour
             if (!_isHolding && distanceToPlayer.magnitude <= _pickupRange && !_slotFull)
             {
                 pickup();
-                //_camaraControl._dialogCanvass.enabled = true;
-                //_dialogueTriggerZona.JumpStartDialogue();
+                _camaraControl._dialogCanvas.enabled = true;
+                _dialogTriggerZA.PickUpDialog();
+                Cursor.lockState = CursorLockMode.None; // Muestra el mouse
+                _camaraControl.mouseSensibilidadY = 0;
             }
         }
     }
