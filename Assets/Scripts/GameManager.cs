@@ -16,6 +16,6 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        _camaraControl._dialogCanvas.enabled = true;
+        //_camaraControl._dialogCanvas.enabled = true;
     }
 }

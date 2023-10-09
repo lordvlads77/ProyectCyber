@@ -65,10 +65,9 @@ public class DialogMananger : MonoBehaviour
     {
         _anim.SetBool(_isOpen, false);
         Debug.Log("Se acabo el Cotorreo");
-        _camaraControl._dialogCanvas.enabled = false;
+        //_camaraControl._dialogCanvas.enabled = false;
         // En el editor, si presionas ESC, vuelve a aparecer el mouse.
         Cursor.lockState = CursorLockMode.Locked; // Oculta el mouse y lo mantiene dentro del juego
-        _camaraControl.mouseSensibilidadX = 200;
         _camaraControl.mouseSensibilidadY = 270;
 
     }
