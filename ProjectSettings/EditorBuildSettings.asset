@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ZonaBaja.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/ZonaAlta.unity
+    guid: fe5c564394730174f9fb3c64f4f397cf
   m_configObjects: {}

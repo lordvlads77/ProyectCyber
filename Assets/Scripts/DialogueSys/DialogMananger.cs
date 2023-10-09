@@ -68,8 +68,7 @@ public class DialogMananger : MonoBehaviour
         _camaraControl._dialogCanvas.enabled = false;
         // En el editor, si presionas ESC, vuelve a aparecer el mouse.
         Cursor.lockState = CursorLockMode.Locked; // Oculta el mouse y lo mantiene dentro del juego
-        _camaraControl.mouseSensibilidadX = 200;
-        _camaraControl.mouseSensibilidadY = 270;
+        _camaraControl.mouseSensibilidadY = 200;
 
     }
 }

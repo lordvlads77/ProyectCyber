@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - PlayerHealthBar
+  - ExitDiag
+  - ReSpawner
+  - LevelChanger
   layers:
   - Default
   - TransparentFX
