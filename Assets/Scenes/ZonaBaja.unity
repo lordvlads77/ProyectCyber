@@ -31364,9 +31364,9 @@ GameObject:
   - component: {fileID: 577813226622382707}
   - component: {fileID: 4587784302914600406}
   - component: {fileID: 1751868153845418268}
-  - component: {fileID: 4587784302914600409}
   - component: {fileID: 4587784302914600408}
-  - component: {fileID: 4587784302914600407}
+  - component: {fileID: 4587784302914600410}
+  - component: {fileID: 4587784302914600409}
   m_Layer: 0
   m_Name: wallet
   m_TagString: Untagged
@@ -32123,6 +32123,9 @@ MonoBehaviour:
     - Oh mira, finalmente encontre a la desgraciada
     - Seguramente se me cayo cuando casi peto en este socabon.
     - Ya hice mucho ejercicio, a mimir un rato.
+    - Aaa si cierto, ya me acorde, yo estaba buscando mi cartera porque iba a comprar
+      el mandado.
+    - Hacia la Zona Alta
 --- !u!4 &1980148445113756096
 Transform:
   m_ObjectHideFlags: 0
@@ -33026,19 +33029,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 238443106363058377}
   m_Mesh: {fileID: -5458934071249561279, guid: 81f477ed28e76bf4fa01da26205f658b, type: 3}
---- !u!135 &4587784302914600407
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 238443106363058377}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.0005177945
-  m_Center: {x: 0.000011474789, y: 0.00011051848, z: -5.960465e-11}
 --- !u!54 &4587784302914600408
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -33064,21 +33054,34 @@ MonoBehaviour:
   m_GameObject: {fileID: 238443106363058377}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8dee202530c9dfd478558624a4611ccc, type: 3}
+  m_Script: {fileID: 11500000, guid: 9a67af797c03a994b80fc28310abd649, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _rigi: {fileID: 4587784302914600408}
-  _sphereCollider: {fileID: 4587784302914600407}
-  player: {fileID: 0}
+  _SphereCollider: {fileID: 4587784302914600410}
+  player: {fileID: 6397818956350283620}
   _randomNumber: 0
-  _theObjecttoPickup: {fileID: 238443106363058377}
+  _theObjectToPickup: {fileID: 238443106363058377}
   _pickupRange: 4
-  _throwForceUp: 15
-  _throwForceForward: 7
+  _throwForceUp: 7
+  _throwForceForward: 15
   _isHolding: 0
   _slotFull: 0
-  _thirdPersonCamera: {fileID: 0}
-  _dialogueTriggerZona: {fileID: 1812301935252436575}
+  _camaraControl: {fileID: 6864373192730715211}
+  _dialogTriggerZonaB: {fileID: 1812301935252436575}
+--- !u!135 &4587784302914600410
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238443106363058377}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.0005358276
+  m_Center: {x: -0.00014390952, y: -0.000026832642, z: -5.960465e-11}
 --- !u!4 &4651979408325011080
 Transform:
   m_ObjectHideFlags: 0
@@ -33897,7 +33900,7 @@ Transform:
   m_GameObject: {fileID: 6017458763419911646}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -69.06, y: -1.03, z: 53.66}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5382145003911460030}
@@ -34143,7 +34146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mouseSensibilidadY: 200
-  _dialogCanvas: {fileID: 0}
+  _dialogCanvas: {fileID: 7344411660448692096}
   cuerpoTransform: {fileID: 6397818956350283620}
 --- !u!4 &6864373192730715220
 Transform:
