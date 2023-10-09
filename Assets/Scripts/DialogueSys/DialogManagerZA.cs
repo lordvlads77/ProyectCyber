@@ -16,6 +16,8 @@ public class DialogManagerZA : MonoBehaviour
     public Animator _anim;
     private readonly int _isOpen = Animator.StringToHash("isOpen");
     
+    public PersonajeMov3D _personajeMov3D;
+    
     private Queue<string> _sentences;
     void Start()
     {

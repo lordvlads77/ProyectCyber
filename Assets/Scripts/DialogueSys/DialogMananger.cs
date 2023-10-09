@@ -19,6 +19,8 @@ public class DialogMananger : MonoBehaviour
     private readonly int _isOpen = Animator.StringToHash("isOpen");
     
     private Queue<string> _sentences;
+
+    public PersonajeMov3D _PersonajeMov;
     void Start()
     {
         _sentences = new Queue<string>();
@@ -44,9 +46,9 @@ public class DialogMananger : MonoBehaviour
             return;
         }
         string sentence = _sentences.Dequeue();
-        StopCoroutine(writeSentences(sentence));
-        //_dialogueTxt.text = sentence; This call the complete sentence
-        StartCoroutine(writeSentences(sentence));
+        //StopCoroutine(writeSentences(sentence));
+        _dialogueTxt.text = sentence; //This call the complete sentence
+        //StartCoroutine(writeSentences(sentence));
     }
 
     IEnumerator writeSentences(string sentence)
@@ -69,6 +71,8 @@ public class DialogMananger : MonoBehaviour
         // En el editor, si presionas ESC, vuelve a aparecer el mouse.
         Cursor.lockState = CursorLockMode.Locked; // Oculta el mouse y lo mantiene dentro del juego
         _camaraControl.mouseSensibilidadY = 200;
+        _PersonajeMov.enabled = true;
+        
 
     }
 }

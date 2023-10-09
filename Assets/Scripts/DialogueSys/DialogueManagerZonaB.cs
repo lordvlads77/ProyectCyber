@@ -45,9 +45,9 @@ public class DialogueManagerZonaB : MonoBehaviour
             return;
         }
         string sentence = _sentences.Dequeue();
-        StopCoroutine(writeSentences(sentence));
-        //_dialogueTxt.text = sentence; This call the complete sentence
-        StartCoroutine(writeSentences(sentence));
+        //StopCoroutine(writeSentences(sentence));
+        _dialogueTxt.text = sentence; //This call the complete sentence
+        //StartCoroutine(writeSentences(sentence));
     }
 
     IEnumerator writeSentences(string sentence)
