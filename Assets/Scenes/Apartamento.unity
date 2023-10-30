@@ -5447,7 +5447,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 84
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!114 &3943856509608897313
 MonoBehaviour:
@@ -11434,6 +11434,7 @@ GameObject:
   - component: {fileID: 2015311626051847658}
   - component: {fileID: 6354287239952361174}
   - component: {fileID: 2106842162670750775}
+  - component: {fileID: 7712358191971154194}
   m_Layer: 0
   m_Name: ground
   m_TagString: Untagged
@@ -11441,6 +11442,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &7712358191971154194
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7712358191971154193}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2977981768884665668, guid: 02ad78cca7f19f843b49a2e580791919, type: 3}
 --- !u!1 &7714343134644584820
 GameObject:
   m_ObjectHideFlags: 0
