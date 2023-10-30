@@ -41,5 +41,7 @@ public class InputManager : MonoBehaviour
     {
         _verticalInput = _movementInput.y;
         _horizontalInput = _movementInput.x;
+        _moveAmount = Mathf.Clamp01(Mathf.Abs(_horizontalInput) + Mathf.Abs(_verticalInput));
+        _animatorController.UpdateAnimatorValues(0, _moveAmount);
     }
 }
