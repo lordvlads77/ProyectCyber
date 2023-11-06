@@ -53,7 +53,7 @@ public class AreaExitBlockerZA : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         _playerMoveManager._diagCanvas.enabled = true;
         yield return new WaitForSeconds(4f);
-        _zoneChanger.ChangeZonee();
+        _zoneChanger.ReturnZonaM();
         yield break;
     }
 }

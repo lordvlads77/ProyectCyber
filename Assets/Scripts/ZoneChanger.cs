@@ -11,4 +11,9 @@ public class ZoneChanger : MonoBehaviour
     {
         SceneManager.LoadScene(sceneBuildIndex + 1);
     }
+
+    public void ReturnZonaM()
+    {
+        SceneManager.LoadSceneAsync(0);
+    }
 }

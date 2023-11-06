@@ -130909,7 +130909,7 @@ MonoBehaviour:
   _walkingSpeed: 1.5
   _runningSpeed: 3.3
   _sprintingSpeed: 7
-  _rotationSpeed: 8
+  _rotationSpeed: 7
 --- !u!114 &5858035302920895379
 MonoBehaviour:
   m_ObjectHideFlags: 0
