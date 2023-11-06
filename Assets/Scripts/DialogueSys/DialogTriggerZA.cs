@@ -28,4 +28,10 @@ public class DialogTriggerZA : MonoBehaviour
         FindObjectOfType<DialogManagerZA>().StartCoto(dialogue);
         _anim.SetBool(_isClicked, true);
     }
+
+    public void NoExiting()
+    {
+        FindObjectOfType<DialogManagerZA>().StartCoto(dialogue);
+        _anim.SetBool(_isClicked, true);
+    }
 }

@@ -26,9 +26,15 @@ public class PickupAlta : MonoBehaviour
 
     public DialogTriggerZA _dialogTriggerZA;
     [SerializeField] private InputManager _inputManager;
+    
+    [SerializeField] private CollectibleItem _collectibleItem;
 
     void Start()
     {
+        if (_collectibleItem != null)
+        {
+            string itemName = _collectibleItem.itemName;
+        }
         if (!_isHolding)
         {
             _rigi.isKinematic = false;
@@ -41,6 +47,7 @@ public class PickupAlta : MonoBehaviour
             _boxCollider.isTrigger = true;
             _slotFull = true;
         }
+        _collectibleItem.IsCollected = false;
     }
     
 
@@ -76,6 +83,7 @@ public class PickupAlta : MonoBehaviour
         _rigi.isKinematic = true;
         _boxCollider.isTrigger = true;
         Destroy(_theObjectToPickup);
+        _collectibleItem.IsCollected = true;
     }
     
     private void drop()
