@@ -13,7 +13,7 @@ public class TeleportScript : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             // Cargar la escena especificada en sceneToLoad
-            SceneManager.LoadScene("ZonaMedia");
+            SceneManager.LoadScene("InteriorDC");
         }
     }
 }

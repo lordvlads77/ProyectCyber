@@ -7,6 +7,6 @@ public class ButtonController : MonoBehaviour
 {
     public void EscenaJuego()
     {
-        SceneManager.LoadScene("ZonaMedia");
+        SceneManager.LoadScene("BajaZona");
     }
 }

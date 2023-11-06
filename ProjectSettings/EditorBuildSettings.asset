@@ -14,9 +14,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BajaZona.unity
     guid: b32dbf26a1bca6f4cb335edab555761c
-  - enabled: 0
-    path: Assets/Scenes/ZonaBaja.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/ZonaAlta.unity
     guid: fe5c564394730174f9fb3c64f4f397cf
@@ -29,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/EnemigosZonabaja/GameOver.unity
     guid: 956f02c681303d848ae4c0be89eea79b
+  - enabled: 1
+    path: Assets/Scenes/InteriorDC.unity
+    guid: 07474ea6ddbc3aa47a877c602ebcba39
   m_configObjects: {}
