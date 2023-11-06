@@ -11,12 +11,12 @@ public class ManipuladorVida : MonoBehaviour
 
     void Start()
     {
-        playervida = GameObject.FindGameObjectWithTag("Player").GetComponent<VidaPlayer>();
+        playervida = GameObject.FindWithTag("Player").GetComponent<VidaPlayer>();
     }
 
     private void OnTriggerStay(Collider other)
     {
-        if(other.tag == "Payer")
+        if(other.tag == "Player")
         {
             currentDamageTime += Time.deltaTime;
             if(currentDamageTime > damageTime)
