@@ -6,13 +6,9 @@ using UnityEngine.SceneManagement;
 public class ZoneChanger : MonoBehaviour
 {
     [SerializeField] private int sceneBuildIndex;
-    private void OnCollisionEnter(Collision collision)
+
+    public void ChangeZonee()
     {
-        // If the player collides with the object, load the next level
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            // Load the next level
-            SceneManager.LoadScene(sceneBuildIndex + 1);
-        }
+        SceneManager.LoadScene(sceneBuildIndex + 1);
     }
 }

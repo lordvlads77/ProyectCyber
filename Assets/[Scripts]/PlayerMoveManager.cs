@@ -8,7 +8,7 @@ public class PlayerMoveManager : MonoBehaviour
     InputManager _inputManager;
     CameraManager _cameraManager;
     PlayerLocomotion _playerLocomotion;
-    [SerializeField] private Canvas _diagCanvas;
+    [SerializeField] public Canvas _diagCanvas;
     private void Awake()
     {
         _inputManager = GetComponent<InputManager>();

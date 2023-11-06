@@ -13572,7 +13572,7 @@ MonoBehaviour:
     _speakerName: Juancho
     sentences:
     - Por fin, ya encontre todo, ahora si a comprar el mandado en el Distrito Comercial.
-  _anim: {fileID: 0}
+  _anim: {fileID: 4620211182061521822}
 --- !u!1001 &1871385550
 PrefabInstance:
   m_ObjectHideFlags: 0
