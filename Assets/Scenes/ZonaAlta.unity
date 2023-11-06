@@ -4317,7 +4317,7 @@ MonoBehaviour:
     _speakerName: Juancho
     sentences:
     - Mi celular! Por fin lo encontre!
-  _anim: {fileID: 0}
+  _anim: {fileID: 4620211182061521822}
 --- !u!1001 &643467025
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5533,7 +5533,7 @@ MonoBehaviour:
     _speakerName: Juancho
     sentences:
     - Mis llaves! Las he encontrado, yay!
-  _anim: {fileID: 0}
+  _anim: {fileID: 4620211182061521822}
 --- !u!1001 &773484678
 PrefabInstance:
   m_ObjectHideFlags: 0
