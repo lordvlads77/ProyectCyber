@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class VidaPlayer : MonoBehaviour
 {
     public float vida = 100;
+
     public Image barraDeVida;
 
     void Update()
