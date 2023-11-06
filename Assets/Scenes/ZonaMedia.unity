@@ -130858,6 +130858,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca4c5871936cf8142ba1da94e60d4bd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animatorController: {fileID: 0}
   _movementInput: {x: 0, y: 0}
   _cameraInput: {x: 0, y: 0}
   _cameraInputX: 0
