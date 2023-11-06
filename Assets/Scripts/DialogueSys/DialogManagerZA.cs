@@ -6,18 +6,16 @@ using System;
 
 public class DialogManagerZA : MonoBehaviour
 {
-    [Header("Camara Script Reference")]
-    [SerializeField] private CamaraControl _camaraControl;
-    
     [SerializeField] private TextMeshProUGUI _speakerNameText = default;
     [SerializeField] private TextMeshProUGUI _dialogueTxt = default;
+    [SerializeField] private CameraManager _cameraManager;
+    [SerializeField] private InputManager _inputManager;
+    [SerializeField] private PlayerMoveManager _playerMoveManager;
     
     [Header("Animation")]
     public Animator _anim;
     private readonly int _isOpen = Animator.StringToHash("isOpen");
-    
-    public PersonajeMov3D _personajeMov3D;
-    
+
     private Queue<string> _sentences;
     void Start()
     {
@@ -64,10 +62,13 @@ public class DialogManagerZA : MonoBehaviour
     {
         _anim.SetBool(_isOpen, false);
         Debug.Log("Se acabo el Cotorreo");
-        _camaraControl._dialogCanvas.enabled = false;
+        //_camaraControl._dialogCanvas.enabled = false;
+        _cameraManager._canvasDialog.enabled = false;
         // En el editor, si presionas ESC, vuelve a aparecer el mouse.
         Cursor.lockState = CursorLockMode.Locked; // Oculta el mouse y lo mantiene dentro del juego
-        _camaraControl.mouseSensibilidadY = 200;
-
+        _cameraManager.cameraPivotSpeed = 2;
+        _cameraManager.cameraLookSpeed = 2;
+        _inputManager.enabled = true;
+        _playerMoveManager.enabled = true;
     }
 }

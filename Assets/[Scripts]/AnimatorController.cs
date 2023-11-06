@@ -16,7 +16,7 @@ public class AnimatorController : MonoBehaviour
         vertical = Animator.StringToHash("Vertical");
     }
 
-    public void UpdateAnimatorValues(float horizontalMovement, float verticalMovement)
+    public void UpdateAnimatorValues(float horizontalMovement, float verticalMovement, bool isSprinting)
     {
         /*Animation Snapping in case the anims dont go that well with each other or, if they look
          weird when they are blending */
@@ -70,6 +70,12 @@ public class AnimatorController : MonoBehaviour
                 snappedVertical = 0;
             }
         #endregion
+
+        if (isSprinting)
+        {
+            snappedHorizontal = horizontalMovement;
+            snappedVertical = 2;
+        }
         _animator.SetFloat(horizontal, snappedHorizontal, 0.1f, Time.deltaTime);
         _animator.SetFloat(vertical, snappedVertical, 0.1f, Time.deltaTime);
     }

@@ -21,10 +21,11 @@ public class PickupAlta : MonoBehaviour
     [SerializeField] private bool _isHolding = default;
     [SerializeField] private bool _slotFull = default;
     
-    [Header("Camera Ref")]
-    [FormerlySerializedAs("_cameraControl")] [SerializeField] private CamaraControl _camaraControl = default;
-    
+    [Header("Camara Ref")]
+    [SerializeField] private CameraManager _cameraManager;
+
     public DialogTriggerZA _dialogTriggerZA;
+    [SerializeField] private InputManager _inputManager;
 
     void Start()
     {
@@ -46,15 +47,16 @@ public class PickupAlta : MonoBehaviour
     private void LateUpdate()
     {
         Vector3 distanceToPlayer = player.position - _rigi.transform.position;
-        if (Input.GetKeyDown(KeyCode.F))
+        if (_inputManager._inputSquare == true)
         {
             if (!_isHolding && distanceToPlayer.magnitude <= _pickupRange && !_slotFull)
             {
                 pickup();
-                _camaraControl._dialogCanvas.enabled = true;
+                _cameraManager._canvasDialog.enabled = true;
                 _dialogTriggerZA.PickUpDialog();
                 Cursor.lockState = CursorLockMode.None; // Muestra el mouse
-                _camaraControl.mouseSensibilidadY = 0;
+                _cameraManager.cameraPivotSpeed = 0;
+                _cameraManager.cameraLookSpeed = 0;
             }
         }
     }

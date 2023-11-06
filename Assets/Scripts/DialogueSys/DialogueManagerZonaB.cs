@@ -7,9 +7,6 @@ using UnityEngine.Serialization;
 
 public class DialogueManagerZonaB : MonoBehaviour
 {
-    [Header("Camara Script Reference")]
-    [SerializeField] private ThirdPersonCamera _thirdPersonCamera;
-
     [SerializeField] private TextMeshProUGUI _speakerNameText = default;
     [SerializeField] private TextMeshProUGUI _dialogueTxt = default;
     
@@ -17,6 +14,9 @@ public class DialogueManagerZonaB : MonoBehaviour
     [FormerlySerializedAs("anim")] public Animator _anim;
     private readonly int _isOpen = Animator.StringToHash("isOpen");
     
+    [SerializeField] private CameraManager _cameraManager;
+    [SerializeField] private Canvas _canvasDiagg;
+
     private Queue<string> _sentences;
     void Start()
     {
@@ -33,7 +33,8 @@ public class DialogueManagerZonaB : MonoBehaviour
             _sentences.Enqueue(sentence);
         }
         showNextSentence();
-        _thirdPersonCamera.rotationSpeed = 0;
+        _cameraManager.cameraLookSpeed = 0;
+        _cameraManager.cameraPivotSpeed = 0;
         Cursor.lockState = CursorLockMode.None;
     }
 
@@ -68,8 +69,10 @@ public class DialogueManagerZonaB : MonoBehaviour
         Debug.Log("Se acabo el Cotorreo");
         // En el editor, si presionas ESC, vuelve a aparecer el mouse.
         Cursor.lockState = CursorLockMode.Locked; // Oculta el mouse y lo mantiene dentro del juego
-        _thirdPersonCamera._dialogCanvass.enabled = false;
-        _thirdPersonCamera.rotationSpeed = 1;
+        _cameraManager.cameraLookSpeed = 2;
+        _cameraManager.cameraPivotSpeed = 2;
+        _canvasDiagg.enabled = false;
+        
 
     }
 }

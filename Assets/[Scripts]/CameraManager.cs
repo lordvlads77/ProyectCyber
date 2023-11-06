@@ -6,7 +6,7 @@ using UnityEngine.Serialization;
 
 public class CameraManager : MonoBehaviour
 {
-    InputManager _inputManager;
+    private InputManager _inputManager;
     public Transform targetTransform; // The object the camera will follow
     public Transform _cameraPivot; //The object the camera uses to pivot (Look up and down)
     [SerializeField] private Transform _cameraTransform; // The transform of the actual camera objet in the scene
@@ -19,12 +19,13 @@ public class CameraManager : MonoBehaviour
     [SerializeField] private float _minimumCollisionOffset = 0.2f;
     [SerializeField] private float _timeofTheLerp = 0.2f;
     [FormerlySerializedAs("followSpeed")] public float cameraFollowSpeed = 0.2f;
-    [SerializeField] private float cameraLookSpeed = 2f;
-    [SerializeField] private float cameraPivotSpeed = 2f;
+    [SerializeField] public float cameraLookSpeed = 2f;
+    [SerializeField] public float cameraPivotSpeed = 2f;
     public float _lookAngle; //Camera look up and down
     public float _pivotAngle; // Camera look left and right
     [SerializeField] private float _minimunPivotAngle = -35f;
     [SerializeField] private float _maximumPivotAngle = 35f;
+    [SerializeField] public Canvas _canvasDialog;
 
     private void Awake()
     {
@@ -32,6 +33,18 @@ public class CameraManager : MonoBehaviour
         targetTransform = FindObjectOfType<PlayerMoveManager>().transform;
         _cameraTransform = Camera.main.transform;
         _defaultPosition = _cameraTransform.localPosition.z;
+        _canvasDialog.enabled = false;
+    }
+
+    private void Start()
+    {
+        if (_canvasDialog.enabled == true )
+        {
+            Cursor.lockState = CursorLockMode.None; // Muestra el mouse
+            cameraPivotSpeed = 0;
+            cameraLookSpeed = 0;
+            
+        }
     }
 
     public void HandleAllCameraMovement()

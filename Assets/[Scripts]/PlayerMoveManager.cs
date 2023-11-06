@@ -8,6 +8,7 @@ public class PlayerMoveManager : MonoBehaviour
     InputManager _inputManager;
     CameraManager _cameraManager;
     PlayerLocomotion _playerLocomotion;
+    [SerializeField] private Canvas _diagCanvas;
     private void Awake()
     {
         _inputManager = GetComponent<InputManager>();
@@ -18,6 +19,14 @@ public class PlayerMoveManager : MonoBehaviour
     private void Update()
     {
         _inputManager.HandleAllInputs();
+        if (_diagCanvas.enabled == true)
+        {
+            _inputManager.enabled = false;
+        }
+        else if (_diagCanvas.enabled == false)
+        {
+            _inputManager.enabled = true;
+        }
     }
 
     private void FixedUpdate()

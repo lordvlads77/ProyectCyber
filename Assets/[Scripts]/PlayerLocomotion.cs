@@ -2,21 +2,29 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class PlayerLocomotion : MonoBehaviour
 {
     [Header("The Input Manager Script")]
     InputManager _inputManager;
     [Header("The Move Direction")]
-    Vector3 _moveDirection;
+    public Vector3 _moveDirection;
     [Header("The Camara Transform")]
     Transform cameraObject;
     [Header("Rigidbody Reference")]
     private Rigidbody _elRigido;
-    [Header("Movement Speed")]
-    [SerializeField] private float _movementSpeed = default;
+
+    [SerializeField] public bool _isSprinting;
+    [Header("Walk Speed")]
+    [SerializeField] public float _walkingSpeed = default;
+    [FormerlySerializedAs("_movementSpeed")]
+    [Header("Running Speed")]
+    [SerializeField] public float _runningSpeed = default;
+    [Header("Sprinting Speed")] 
+    [SerializeField] public float _sprintingSpeed = default;
     [Header("Rotation Speed")]
-    [SerializeField] private float _rotationSpeed = default;
+    [SerializeField] public float _rotationSpeed = default;
     
     private void Awake()
     {
@@ -24,7 +32,9 @@ public class PlayerLocomotion : MonoBehaviour
         _elRigido = GetComponent<Rigidbody>();
         cameraObject = Camera.main.transform;
     }
+
     
+
     public void HandleAllMovement()
     {
         HandleMovement();
@@ -37,7 +47,25 @@ public class PlayerLocomotion : MonoBehaviour
         _moveDirection = _moveDirection + cameraObject.right * _inputManager._horizontalInput; //Movement Input
         _moveDirection.Normalize();
         _moveDirection.y = 0;
-        _moveDirection = _moveDirection * _movementSpeed;
+        if (_isSprinting)
+        {
+            _moveDirection = _moveDirection * _sprintingSpeed;
+        }
+        else
+        {
+            if (_inputManager._moveAmount >= 0.5f)
+            {
+                _moveDirection = _moveDirection * _runningSpeed;
+            }
+            else
+            {
+                _moveDirection = _moveDirection * _walkingSpeed;
+            }
+        }
+        // If we are sprinting the sprinting speed will be selected
+        // if we are running the running speed will be selected
+        // If we are walking the walking speed will be selected
+        _moveDirection = _moveDirection * _runningSpeed;
         Vector3 moveVelocity = _moveDirection;
         _elRigido.velocity = moveVelocity;
     }

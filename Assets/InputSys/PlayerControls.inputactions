@@ -202,6 +202,76 @@
                     "isPartOfComposite": true
                 }
             ]
+        },
+        {
+            "name": "PlayerActions",
+            "id": "4febb505-3c7f-4299-a543-29c13db6254e",
+            "actions": [
+                {
+                    "name": "Sprinting",
+                    "type": "Button",
+                    "id": "97c9506f-8917-4af7-a68d-3bcaf61e47ad",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Pickup",
+                    "type": "Button",
+                    "id": "d60d8ad0-8521-42bd-b2e0-7cfdee16cd07",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "13cd58b8-abf2-46b4-a4ca-e34323db05dc",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Sprinting",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5ebf0621-2f1b-4684-bb59-5ce4c76cc625",
+                    "path": "<Keyboard>/shift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Sprinting",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1eab62cb-9e43-47f3-acd3-6fa112a43a39",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pickup",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2fb48bab-7ccd-48d1-904e-708b7bfc94b7",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pickup",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []

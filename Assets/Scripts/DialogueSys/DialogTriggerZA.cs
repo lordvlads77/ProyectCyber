@@ -5,8 +5,7 @@ using UnityEngine;
 public class DialogTriggerZA : MonoBehaviour
 {
     [SerializeField] public Dialogue dialogue;
-    [SerializeField] private PersonajeMov3D _personajeMov;
-    
+
     [Header("Animation")]
     public Animator _anim;
     private readonly int _isClicked = Animator.StringToHash("isClicked");
@@ -15,7 +14,6 @@ public class DialogTriggerZA : MonoBehaviour
     public void StartDiag()
     {
         FindObjectOfType<DialogManagerZA>().StartCoto(dialogue);
-        _personajeMov.enabled = true;
         _anim.SetBool(_isClicked, true);
     }
 
