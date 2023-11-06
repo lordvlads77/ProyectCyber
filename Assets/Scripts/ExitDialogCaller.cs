@@ -2,20 +2,25 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class ExitDialogCaller : MonoBehaviour
 {
     public DialogTriggerZA _DialogTriggerZa;
-    [FormerlySerializedAs("_CamaraControl")] public CamaraControl _camaraControl;
+    [SerializeField] private CameraManager _cameraManager;
+    [SerializeField] private InputManager _inputManager;
+    [SerializeField] private PlayerMoveManager _playerMoveManager;
+
     public void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("ExitDiag"))
         {
-            _camaraControl._dialogCanvas.enabled = true;
+            _cameraManager._canvasDialog.enabled = true;
             _DialogTriggerZa.ExitDiag();
             Cursor.lockState = CursorLockMode.None;
-            _camaraControl.mouseSensibilidadY = 0;
+            _inputManager._animatorController.UpdateAnimatorValues(0, 0, false);
+            _playerMoveManager.enabled = false;
+            _inputManager.enabled = false;
+            
         }
     }
 }

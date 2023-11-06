@@ -7,8 +7,7 @@ public class DialogueTrigger : MonoBehaviour
 {
     [SerializeField] public Dialogue dialogue;
     [SerializeField] private GameObject _startCanvas = default;
-    public PersonajeMov3D _personajeMov;
-    
+
 
     public void TriggerDialogue()
     {
