@@ -8,6 +8,7 @@ TagManager:
   - ExitDiag
   - ReSpawner
   - LevelChanger
+  - arma
   layers:
   - Default
   - TransparentFX
