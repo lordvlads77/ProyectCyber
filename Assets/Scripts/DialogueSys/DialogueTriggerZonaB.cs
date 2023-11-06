@@ -10,4 +10,14 @@ public class DialogueTriggerZonaB : MonoBehaviour
     {
         FindObjectOfType<DialogueManagerZonaB>().StartCoto(dialogue);
     }
+    
+    public void LeavingOkey()
+    {
+        FindObjectOfType<DialogueManagerZonaB>().StartCoto(dialogue);
+    }
+
+    public void NoExit()
+    {
+        FindObjectOfType<DialogueManagerZonaB>().StartCoto(dialogue);
+    }
 }

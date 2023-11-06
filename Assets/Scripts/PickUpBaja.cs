@@ -26,9 +26,14 @@ public class PickUpBaja : MonoBehaviour
 
     [Header("Camera Control Ref")] 
     [SerializeField] private CameraManager _cameraManager;
+    public CollectibleItem _collectibleItem;
 
     void Start()
     {
+        if (_collectibleItem != null)
+        {
+            string itemName = _collectibleItem.itemName;
+        }
         if (!_isHolding)
         {
             _rigi.isKinematic = false;
@@ -78,6 +83,7 @@ public class PickUpBaja : MonoBehaviour
         _rigi.isKinematic = true;
         _SphereCollider.isTrigger = true;
         Destroy(_theObjectToPickup);
+        _collectibleItem.IsCollected = true;
     }
     
     private void drop()

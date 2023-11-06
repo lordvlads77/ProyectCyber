@@ -20,10 +20,18 @@ public class DialogTriggerZA : MonoBehaviour
     public void PickUpDialog()
     {
         FindObjectOfType<DialogManagerZA>().StartCoto(dialogue);
+        _anim.SetBool(_isClicked, true);
     }
 
     public void ExitDiag()
     {
         FindObjectOfType<DialogManagerZA>().StartCoto(dialogue);
+        _anim.SetBool(_isClicked, true);
+    }
+
+    public void NoExiting()
+    {
+        FindObjectOfType<DialogManagerZA>().StartCoto(dialogue);
+        _anim.SetBool(_isClicked, true);
     }
 }

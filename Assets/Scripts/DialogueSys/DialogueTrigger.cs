@@ -16,4 +16,9 @@ public class DialogueTrigger : MonoBehaviour
         _startCanvas.SetActive(false);
         
     }
+
+    public void NoTrespass()
+    {
+        FindObjectOfType<DialogMananger>().StartCoto(dialogue);
+    }
 }
