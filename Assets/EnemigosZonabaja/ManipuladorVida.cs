@@ -16,7 +16,7 @@ public class ManipuladorVida : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if(other.tag == "PLayer")
+        if(other.tag == "Player")
         {
             currentDamageTime += Time.deltaTime;
             if(currentDamageTime > damageTime)
