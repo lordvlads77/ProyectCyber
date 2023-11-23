@@ -52,7 +52,7 @@ public class AreaExitBlocker : MonoBehaviour
         _dialogueTrigger.LeavingOkey();
         _playerMoveManager._diagCanvas.enabled = true;
         yield return new WaitForSeconds(4f);
-        _zoneChanger.ChangeZonee();
+        _zoneChanger.ReturnZonaAlta();
         yield break;
     }
 }

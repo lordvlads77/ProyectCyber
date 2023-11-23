@@ -16,4 +16,14 @@ public class ZoneChanger : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(0);
     }
+
+    public void ReturnCentroCo()
+    {
+        SceneManager.LoadSceneAsync(3);
+    }
+
+    public void ReturnZonaAlta()
+    {
+        SceneManager.LoadSceneAsync(2);
+    }
 }
