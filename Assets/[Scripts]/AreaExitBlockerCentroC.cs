@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AreaExitBlockerZA : MonoBehaviour
+public class AreaExitBlockerCentroC : MonoBehaviour
 {
     public List<CollectibleItem> requiredItems = new List<CollectibleItem>();
     public DialogTriggerZA _dialogueTrigger2;
@@ -53,7 +53,7 @@ public class AreaExitBlockerZA : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         _playerMoveManager._diagCanvas.enabled = true;
         yield return new WaitForSeconds(4f);
-        _zoneChanger.ReturnCentroCo();
+        _zoneChanger.ReturnZonaM();
         yield break;
     }
 }

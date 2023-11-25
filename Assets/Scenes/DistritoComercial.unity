@@ -3806,9 +3806,9 @@ GameObject:
   - component: {fileID: 458605767}
   - component: {fileID: 458605766}
   - component: {fileID: 458605765}
-  - component: {fileID: 458605764}
   - component: {fileID: 458605763}
   - component: {fileID: 458605762}
+  - component: {fileID: 458605769}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -3845,28 +3845,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneBuildIndex: 3
---- !u!114 &458605764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 458605761}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abeeed24e12aeee4f8d80ad4808ed011, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  requiredItems:
-  - {fileID: 11400000, guid: 521911450fb1a094093cf9ac05061ab9, type: 2}
-  - {fileID: 11400000, guid: 7936ba88bb11f4b4190eabb29c25e4b8, type: 2}
-  - {fileID: 11400000, guid: a481ebeb730184b43a11fd07d7c4af51, type: 2}
-  - {fileID: 11400000, guid: 5847122fdf1d0e2469ee18ac4145af52, type: 2}
-  _dialogueTrigger2: {fileID: 955666446}
-  _cameraManager: {fileID: 4368083864490270059}
-  _zoneChanger: {fileID: 458605763}
-  _playerMoveManager: {fileID: 9175751348410591578}
-  _exitDialogCaller: {fileID: 458605762}
 --- !u!64 &458605765
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3946,6 +3924,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: -89.886, y: 0, z: 0}
+--- !u!114 &458605769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458605761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 566e02bcc3bfbdb4d96b189e2a916b74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  requiredItems:
+  - {fileID: 11400000, guid: 521911450fb1a094093cf9ac05061ab9, type: 2}
+  - {fileID: 11400000, guid: 7936ba88bb11f4b4190eabb29c25e4b8, type: 2}
+  - {fileID: 11400000, guid: a481ebeb730184b43a11fd07d7c4af51, type: 2}
+  - {fileID: 11400000, guid: 5847122fdf1d0e2469ee18ac4145af52, type: 2}
+  _dialogueTrigger2: {fileID: 955666446}
+  _cameraManager: {fileID: 4368083864490270059}
+  _zoneChanger: {fileID: 458605763}
+  _playerMoveManager: {fileID: 9175751348410591578}
+  _exitDialogCaller: {fileID: 458605762}
 --- !u!1 &459752555
 GameObject:
   m_ObjectHideFlags: 0
