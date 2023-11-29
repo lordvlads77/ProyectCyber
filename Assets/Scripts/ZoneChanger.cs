@@ -26,4 +26,8 @@ public class ZoneChanger : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(2);
     }
+    public void MagicalReal()
+    {
+        SceneManager.LoadSceneAsync(5);
+    }
 }

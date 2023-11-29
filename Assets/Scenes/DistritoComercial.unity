@@ -20237,6 +20237,7 @@ GameObject:
   - component: {fileID: 5537687711763386195}
   - component: {fileID: 6809646248234521877}
   - component: {fileID: 2448469063623202782}
+  - component: {fileID: 6809646248234521878}
   m_Layer: 0
   m_Name: Mesa_Base
   m_TagString: Untagged
@@ -22672,7 +22673,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 894631139434616759}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -50.43, y: 1.58, z: -116.16}
+  m_LocalPosition: {x: -48.292, y: 1.58, z: -115.924}
   m_LocalScale: {x: 46.083, y: 46.083, z: 46.083}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -41466,6 +41467,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 184650792782053407}
+  m_Mesh: {fileID: -5266483727041937620, guid: 47a72e2b018b315408ea8621b1a7a19e, type: 3}
+--- !u!64 &6809646248234521878
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184650792782053407}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
   m_Mesh: {fileID: -5266483727041937620, guid: 47a72e2b018b315408ea8621b1a7a19e, type: 3}
 --- !u!1 &6824746026164234578
 GameObject:
