@@ -9,10 +9,13 @@ EditorBuildSettings:
     path: Assets/Scenes/ZonaMedia.unity
     guid: 1797d407ddacaff4d8050bf64a4a2512
   - enabled: 1
+    path: Assets/Scenes/OldZonaBaja.unity
+    guid: 2f62037bc3338674aa7a13f781306a9e
+  - enabled: 0
     path: Assets/Scenes/BajaZonaaa.unity
     guid: a3f66e463f354f646a9c7e04f66de8ba
   - enabled: 0
-    path: Assets/Scenes/OldZonaBaja.unity
+    path: Assets/Scenes/ZonaBajaEva.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/ZonaAlta.unity
@@ -26,4 +29,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SpeedRun.unity
     guid: 3c72961000c9080439061a199c09c593
+  - enabled: 1
+    path: Assets/Polytope Studio/Lowpoly_Demos/Environment_Free/Environment_Free.unity
+    guid: c732593fe76e5a84197f9cd13963f706
   m_configObjects: {}
